@@ -1,0 +1,31 @@
+Variable,Data description
+status,Original field - Removed
+bed,Original field
+bath,Original field
+acre_lot,Original field
+city,Original field - Removed. Too granular
+state,Original field
+zip_code,Original field - Removed. Too granular
+house_size,Original field
+prev_sold_date,Original field - filtered to get modelling data. Later removed in the final dataset.
+price,Original field
+bed_missing,Binary variable - missing indicator
+bath_missing,Binary variable - missing indicator
+acre_lot_missing,Binary variable - missing indicator
+house_size_missing,Binary variable - missing indicator
+acre_lot_filled,Missing filled with mean
+house_size_filled,Missing filled with mean
+bed_filled,Missing filled with median
+bath_filled,Missing filled with median
+house_size_filled_capped,Missing filled with mean & capped
+bed_filled_capped,Missing filled with median & capped
+bath_filled_capped,Missing filled with median & capped
+acre_lot_filled_capped,Missing filled with mean & capped
+bed/house_size_filled_capped,bed_filled_capped over house_size_filled_capped
+bath/house_size_filled_capped,bath_filled_capped over house_size_filled_capped
+year, year of the sold date
+month, month of the sold date
+bed/acre_lot_filled_capped, bed_filled_capped over acre_lot_filled_capped
+bath/acre_lot_filled_capped, bath_filled_capped over acre_lot_filled_capped
+house_size/acre_lot_filled_capped, house_size_filled_capped over acre_lot_filled_capped
+bed_vs_bath, bed_less_than_bath or bed_equal_bath or bed_more_than_bath
